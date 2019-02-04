@@ -10,8 +10,8 @@ import (
 	"regexp"
 
 	"github.com/beevik/etree"
-	"github.com/russellhaering/goxmldsig/etreeutils"
-	"github.com/russellhaering/goxmldsig/types"
+	"github.com/braineet/goxmldsig/etreeutils"
+	"github.com/braineet/goxmldsig/types"
 )
 
 var uriRegexp = regexp.MustCompile("^#[a-zA-Z_][\\w.-]*$")
@@ -288,7 +288,11 @@ func (ctx *ValidationContext) validateSignature(el *etree.Element, sig *types.Si
 }
 
 func contains(roots []*x509.Certificate, cert *x509.Certificate) bool {
+	fmt.Println(cert.Raw)
+	fmt.Println(cert.Subject)
 	for _, root := range roots {
+		fmt.Println(root.Raw)
+		fmt.Println(root.Subject)
 		if root.Equal(cert) {
 			return true
 		}

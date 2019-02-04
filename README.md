@@ -1,7 +1,7 @@
 # goxmldsig
 
-[![Build Status](https://travis-ci.org/russellhaering/goxmldsig.svg?branch=master)](https://travis-ci.org/russellhaering/goxmldsig)
-[![GoDoc](https://godoc.org/github.com/russellhaering/goxmldsig?status.svg)](https://godoc.org/github.com/russellhaering/goxmldsig)
+[![Build Status](https://travis-ci.org/braineet/goxmldsig.svg?branch=master)](https://travis-ci.org/braineet/goxmldsig)
+[![GoDoc](https://godoc.org/github.com/braineet/goxmldsig?status.svg)](https://godoc.org/github.com/braineet/goxmldsig)
 
 XML Digital Signatures implemented in pure Go.
 
@@ -10,7 +10,7 @@ XML Digital Signatures implemented in pure Go.
 Install `goxmldsig` into your `$GOPATH` using `go get`:
 
 ```
-$ go get github.com/russellhaering/goxmldsig
+$ go get github.com/braineet/goxmldsig
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ package main
 
 import (
     "github.com/beevik/etree"
-    "github.com/russellhaering/goxmldsig"
+    "github.com/braineet/goxmldsig"
 )
 
 func main() {
