@@ -414,6 +414,7 @@ func (ctx *ValidationContext) verifyCertificate(sig *types.Signature) (*x509.Cer
 
 	var cert *x509.Certificate
 
+	fmt.Println(sig.KeyInfo)
 	if sig.KeyInfo != nil {
 		// If the Signature includes KeyInfo, extract the certificate from there
 		if len(sig.KeyInfo.X509Data.X509Certificates) == 0 || sig.KeyInfo.X509Data.X509Certificates[0].Data == "" {
